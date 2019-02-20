@@ -22,20 +22,20 @@ module.exports = function(grunt) {
 							'src/js/lib/owl.carousel.min.js',
 							'src/js/main.js'
 						],
-				dest: 'dist/js/nbs.min.js'
+				dest: 'dist/js/vkf.min.js'
 			},
 			css: {
 				src: ['src/css/lib/*.css',
 							'src/css/main.css'
 						],
-				dest: 'dist/css/nbs.min.css'
+				dest: 'dist/css/vkf.min.css'
 			}
 		},
 
     uglify: {
 	    my_target: {
 	      files: {
-	        'dist/js/nbs.min.js': ['dist/js/nbs.min.js']
+	        'dist/js/vkf.min.js': ['dist/js/vkf.min.js']
 	      }
 	    }
 	  },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 		  },
 		  target: {
 		    files: {
-		      'dist/css/nbs.min.css': ['dist/css/nbs.min.css']
+		      'dist/css/vkf.min.css': ['dist/css/vkf.min.css']
 		    }
 		  }
 		},
