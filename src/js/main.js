@@ -8,7 +8,7 @@ $(document).ready(function (){
 	  $('html, body').css('overflow','hidden');
 	});
 
-	$('.vkf-modal__close').click(function(e) {
+	$('.vkf-modal__wrapper__content__close').click(function(e) {
 	  e.preventDefault();
 	  $('html, body').css('overflow','');
 	  $('.vkf-modal').fadeOut('fast');
