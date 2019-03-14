@@ -15,3 +15,33 @@ $(document).ready(function (){
 	});
 
 });
+
+function emsFocusIpt(vkf) {
+	$(vkf).removeClass('vkf-error');
+}
+
+function Contato(){
+
+	d = document.form;
+	erro = false;
+	emsElement = '';
+							
+	if($('#your-name').val()==""){
+		erro=true; 
+		emsElement += '#your-name, ';
+	}
+	if($('#your-email').val()==""){
+		erro=true;
+		emsElement += '#your-email, ';
+	}
+	if($('#your-message').val()==""){
+		erro=true; 
+		emsElement += '#your-message';
+	}
+	if (erro) {
+		$(emsElement).addClass('vkf-error');
+	} else {
+		$('form a').html('Enviando...').attr('disabled','disabled');
+		d.submit();
+	}
+}
